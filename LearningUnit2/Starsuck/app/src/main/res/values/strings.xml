@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name" translatable="false">Starsuck</string>
+    <string name="welcome_message" translatable="true">Welcome to StarSucks</string>
+</resources>
