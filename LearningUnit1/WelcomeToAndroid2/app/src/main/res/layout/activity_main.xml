@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- LinearLayout: sets all items contained within to display either horizontally or vertically  -->
+<!-- android:orientation: Where you set the display to either horizontal or vertical -->
+<!-- android:gravity: sets all items in the layout to certain points on the screen. eg centre to set all items to the middle of the screen -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- TextView: Displays text -->
+    <!-- android:id: sets the id for an element -->
+    <!-- android:layout_width: sets the width of that specific component -->
+    <!-- android:layout_height: sets the height of that specific component -->
+    <!-- wrap_content: sets the size based on the text or other content based within -->
+    <!-- match_parent: sets size to fit to the size of the parent  -->
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to Kotlin!"
+        android:textSize="24sp"
+        android:padding="16dp" />
+
+    <!-- EditText: Input field for user text -->
+    <!-- android:hint: Displays text without populating the textview -->
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your name" />
+
+    <!-- Button: Triggers actions when clicked -->
+    <Button
+        android:id="@+id/myButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click Me" />
+
+</LinearLayout>
